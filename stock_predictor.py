@@ -19,7 +19,7 @@ model.fit(X, y)
 tomorrow = [[11]]
 prediction = model.predict(tomorrow)
 
-print("💹 Stock Trend Predictor — Day 75\n")
+print("💹 Stock Trend Predictor \n")
 print(f"Predicted price for tomorrow: ₹{prediction[0]:.2f}")
 
 trend = "UP 📈" if prediction[0] > df["price"].iloc[-1] else "DOWN 📉"
